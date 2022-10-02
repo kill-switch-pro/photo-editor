@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <input type="file" onchange="encodeImageFileAsURL(this)">
+  <img id="myImg">
+
+  <div id="editElem">
+
+
+
+    <div class="blurTT">
+      <p> blur </p>
+      <span class="blurTTT">
+        <input oninput="editImg()" type="range" id="blurValue" value="0" min="0" max="200">
+        <p id="bVal"></p>
+      </span>
+    </div>
+
+    <div class="gTT">
+      <p> gray </p>
+      <span class="gTTT">
+        <input oninput="editImg()" type="range" id="grayValue" value="0" min="0" max="100">
+        <p id="gVal"></p>
+      </span>
+    </div>
+
+    <div class="iTT">
+      <p>invert </p>
+      <span class="iTTT">
+        <input oninput="editImg()" type="range" value="0" id="invertValue" min="0" max="100">
+        <p id="iVal"></p>
+      </span>
+    </div>
+
+    <div class="sTT">
+      <p>sepia</p>
+      <span class="sTTT">
+        <input oninput="editImg()" type="range" id="sepiaValue" value="0" min="0" max="100">
+        <p id="sVal"></p>
+      </span>
+    </div>
+
+    <div class="cTT">
+      <p>contract</p>
+      <span class="cTTT">
+        <input oninput="editImg()" type="range" id="contValue" value="106" min="0" max="150">
+        <p id="cVal"></p>
+      </span>
+    </div>
+
+    <div class="oTT">
+      <p>opacity</p>
+      <span class="oTTT">
+        <input oninput="editImg()" type="range" id="opacityValue" value="100" min="0" max="100">
+        <p id="oVal"></p>
+      </span>
+    </div>
+
+    <div class="brTT">
+      <p>brightness</p>
+      <span class="brTTT">
+        <input oninput="editImg()" type="range" id="brightValue" value="100" min="0" max="100">
+        <p id="brVal"></p>
+      </span>
+    </div>
+
+    <div class="satTT">
+    <p>saturate </p>
+    <span class="satTTT">
+      <input oninput="editImg()" type="range" id="saturateValue" value="100" min="0" max="100">
+      <p id="satVal"></p>
+    </span>
+  </div>
+
+  <div class="hueTT">
+    <p>hue</p>
+    <span class="hueTTT">
+      <input oninput="editImg()" type="range" id="hueValue" value="0" min="0" max="100">
+      <p id="hueVal"></p>
+    </span>
+  </div>
+
+  </div>
+
+
+  <script src="editpic.js">
+  </script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
